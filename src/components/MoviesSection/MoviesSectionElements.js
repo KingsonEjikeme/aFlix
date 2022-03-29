@@ -43,19 +43,19 @@ export const Movies = styled.div`
 `
 
 export const MovieCategoryTitle = styled.p`
-    font-size: 12px;
+    font-size: 24px;
 `
 
 export const Movie = styled.div`
     position: relative;
     width: 300px;
     height: 300px;
-    background-color: #000;
+    
     margin-right: 13px;
     flex: 10 0 auto;
     overflow: hidden;
     border-radius: 12px;
-    cursor: pointer;    
+    cursor: pointer;     
 `
 
 export const MovieTitle = styled.h3`
@@ -71,8 +71,11 @@ export const MovieTitleContainer = styled.div`
     position: absolute;
     width: 200px;
     height: 50px;
+    left: 33%;
+    top: 33%;
 `
 
 export const MovieImage = styled.img`
     object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.5);
 `

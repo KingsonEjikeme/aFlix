@@ -14,6 +14,11 @@ export const HeroContainer = styled.div`
         justify-content: center;
         align-items: center;
     }
+    @media (max-width: 400px){
+        font-size: 50px;
+        line-height: 72px;
+        text-align: center;
+    }
     
 `
 
@@ -38,13 +43,10 @@ export const MainText = styled.div`
         align-self: center;
         text-align: center;
     }
-    @media (min-width: 400px){
+    @media screen only(min-width: 400px){
         font-size: 50px;
         line-height: 72px;
         text-align: center;
-        margin: auto;
-        justify-content: center;
-        left: 100px;
     }
 `
 
