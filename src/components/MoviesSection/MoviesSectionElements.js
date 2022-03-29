@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const MoviesContainer = styled.div`
     background-color: #fff;
+    over-flow: hidden;
 `
 
 export const SearchSection = styled.div`
@@ -46,6 +47,7 @@ export const MovieCategoryTitle = styled.p`
 `
 
 export const Movie = styled.div`
+    position: relative;
     width: 300px;
     height: 300px;
     background-color: #000;
@@ -53,11 +55,10 @@ export const Movie = styled.div`
     flex: 10 0 auto;
     overflow: hidden;
     border-radius: 12px;
-    padding: 10px;
+    cursor: pointer;    
 `
 
 export const MovieTitle = styled.h3`
-    position: relative;
     color: #fff;    
     flex: 10 0 auto; 
     overflow-x: auto;   
@@ -66,6 +67,7 @@ export const MovieTitle = styled.h3`
 `
 
 export const MovieTitleContainer = styled.div`
+    
     position: absolute;
     width: 200px;
     height: 50px;

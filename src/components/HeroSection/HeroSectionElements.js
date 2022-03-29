@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
+    overflow: hidden;
     display: flex;
     height: 550px;
     background-image: url("../../images/cinema.jpg");

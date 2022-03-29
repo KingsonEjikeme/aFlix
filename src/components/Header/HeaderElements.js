@@ -4,6 +4,7 @@ export const Navbar = styled.div`
     background-color: #292929;
     height: 140px;
     position: relative;
+    overflow: hidden;
     
     @media (max-width: 810px){
         display: flex;

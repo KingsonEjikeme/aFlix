@@ -42,7 +42,13 @@ const MoviesSection = () => {
    
 
     
-    
+    const filterTitles = e =>{
+        e.preventDefault();
+        const search = e.target.value.toLowerCase();
+        
+        const filteredTitles = movieData.filter(titles => titles.Title.toLowerCase().includes(search));
+        setMovieData(filteredTitles);
+    }
     
     
     
@@ -54,7 +60,7 @@ const MoviesSection = () => {
     <MoviesContainer>
         <SearchSection>
             <SearchText>Search</SearchText>
-            <SearchBar/>
+            <SearchBar onChange={(e)=>filterTitles(e)}/>
         </SearchSection>
 
         <MovieCategorySection>
@@ -66,7 +72,9 @@ const MoviesSection = () => {
                     {
                         movieData.map((singleMovie) =>(
                                 <Movie>
-                                    <MovieTitle>{singleMovie.Title}</MovieTitle>
+                                    <MovieTitleContainer>
+                                        <MovieTitle>{singleMovie.Title}</MovieTitle>
+                                    </MovieTitleContainer>
                                     <MovieImage src={singleMovie.Poster}/>
                                 </Movie>  
                             )
